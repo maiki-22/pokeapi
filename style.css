@@ -1,0 +1,71 @@
+:root{
+    --gradient: linear-gradient(
+        180deg,
+        #F2E750,
+        #F2C849,
+        #F29E38
+    );
+    --dark: #012E40;
+    --grey: #b1bacb;
+    --grey-border: rgba(210,210,210,0.75);
+    --grey-light: #eeeeee;
+    --grey-dark: $405175;
+    --blue: #012E40;
+    --green: #3CA6A6;
+    --white: #ffffff;
+}
+
+body{
+    background: var(--gradient);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 2rem;
+    background: var(--white);
+    padding: 3rem;
+    height: 50%;
+    width: 60%;
+    box-shadow: 0 1rem 3rem 1rem rgba(0,23,71,0.15);
+    max-width: 30rem;
+}
+
+
+h1{
+    text-transform: uppercase;
+    height: 3rem;
+    color: var(--dark);
+    text-align: center;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.btn{
+    padding: 0 ;
+}
+
+#equipo{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+}
+
+#equipo img{
+    width: 100%;
+    height: auto;
+    
+}
